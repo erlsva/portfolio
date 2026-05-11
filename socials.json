@@ -1,0 +1,34 @@
+{
+  "socials": {
+    "discord": "https://discord.com/users/195228341970796544",
+    "linkedin": "https://www.linkedin.com/in/erlend-s-2206ab159/",
+    "github": "https://github.com/NotEple"
+  },
+  "entertainment": {
+    "movies": [
+      "The Lord of the Rings: The Fellowship of the Ring",
+      "The Lord of the Rings: The Two Towers",
+      "The Lord of the Rings: The Return of the King",
+      "The Hobbit: An Unexpected Journey",
+      "The Hobbit: The Desolation of Smaug",
+      "The Hobbit: The Battle of the Five Armies",
+      "Trolljegeren",
+      "Atlantis: The Lost Empire",
+      "How to Train Your Dragon",
+      "Indiana Jones and Raiders of the Lost Ark",
+      "Indiana Jones and the Temple of Doom",
+      "Indiana Jones and the Last Crusade",
+      "Indiana Jones and the Kingdom of the Crystal Skull",
+      "Avatar"
+    ],
+    "shows": [
+      "House",
+      "Suits",
+      "Breaking Bad",
+      "Better Call Saul",
+      "Reacher",
+      "Arrow",
+      "Mr Inbetween"
+    ]
+  }
+}
