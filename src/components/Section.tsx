@@ -1,17 +1,19 @@
-import type { JSX, ReactNode } from "react";
 import { cn } from "@/utils/cn";
+import type { JSX, ReactNode } from "react";
+
+type SectionProps = {
+  id: string;
+  className?: string;
+  children: ReactNode;
+};
 
 export const Section = ({
   id,
   className,
   children,
-}: {
-  id: string;
-  className?: string;
-  children: ReactNode;
-}): JSX.Element => {
+}: SectionProps): JSX.Element => {
   return (
-    <section className={cn("h-dvh ", className)} id={id}>
+    <section className={cn("min-h-svh ", className)} id={id}>
       {children}
     </section>
   );
