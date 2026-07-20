@@ -12,7 +12,7 @@ export const Nav = (): JSX.Element => {
       transition={{ duration: 1 }}
       className="flex flex-row gap-4 fixed z-50 bottom-0 w-full h-19 bg-neutral-900 pb-[env(safe-area-inset-bottom)] lg:pb-0 lg:bg-transparent lg:flex-col lg:h-dvh lg:left-0 lg:justify-center lg:ml-2 lg:w-fit shadow-[0_-10px_20px_-1px_rgba(0,0,0,0.5)] lg:shadow-none"
     >
-      <ul className="flex flex-row gap-8 p-2 w-full justify-center bg-linear-to-tr from-neutral-900 to-neutral-800 lg:flex-col lg:gap-2 lg:rounded-2xl ">
+      <ul className="flex flex-row gap-8 p-2 w-full justify-center bg-neutral-800 lg:flex-col lg:gap-2 lg:rounded-2xl ">
         <li>
           <NavItem href="#home" text="Home" tooltipPlacement="right">
             <IconComponent icon={House} />

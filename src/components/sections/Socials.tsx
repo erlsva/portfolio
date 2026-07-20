@@ -28,19 +28,6 @@ export const Socials = (): JSX.Element => {
         className="grid grid-cols-2 gap-4 justify-center p-4 rounded-3xl bg-linear-to-tr from-neutral-900 to-neutral-800 drop-shadow-2xl shadow-2xl w-full h-full lg:flex lg:flex-row lg:h-fit"
       >
         <Link
-          href={data.socials.discord}
-          openInNewTab
-          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 hover:bg-neutral-900 justify-center"
-        >
-          <i
-            className={`fa-brands fa-discord text-5xl lg:text-8xl text-discord `}
-          ></i>
-          <p className="lg:text-4xl text-2xl font-header text-discord">
-            Discord
-          </p>
-        </Link>
-
-        <Link
           href={data.socials.linkedin}
           openInNewTab
           className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 hover:bg-neutral-900 justify-center"
