@@ -1,23 +1,25 @@
 import { Link } from "./Link";
 import type { JSX } from "react";
 import { Devicon } from "./Devicon";
+import { Tooltip } from "./Tooltip";
 import { Globe } from "lucide-react";
 import { motion } from "motion/react";
+import { technologyIcons, type Technology } from "@/data/technologies";
 
-type ProjectProps = {
+export type ProjectProps = {
   img: string;
   title: string;
-  paragraph: string;
-  icons: string[];
+  description: string;
+  technologies: Technology[];
   website?: string;
-  github: string;
+  github?: string;
 };
 
 export const Project = ({
   img,
   title,
-  paragraph,
-  icons,
+  description,
+  technologies,
   website,
   github,
 }: ProjectProps): JSX.Element => {
@@ -27,7 +29,7 @@ export const Project = ({
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="rounded-lg bg-linear-to-tr from-neutral-900 to-neutral-800 drop-shadow-2xl shadow-2xl overflow-hidden"
+      className="rounded-lg bg-neutral-900 drop-shadow-2xl shadow-2xl overflow-hidden border border-border hover:outline-neutral-600 hover:outline-2"
     >
       <img
         src={img}
@@ -39,20 +41,23 @@ export const Project = ({
           {title}
         </h2>
         <p className="font-paragraph text-left text-base text-neutral-300">
-          {paragraph}
+          {description}
         </p>
 
         <div className="flex lg:flex-row justify-between gap-4 md:items-center md:flex-row lg:items-center flex-col">
           <div className="flex flex-row gap-2">
-            {icons.map((icon, index) => {
+            {technologies.map((technology, index) => {
+              const icon = technologyIcons[technology];
+
               return (
-                <div className="bg-neutral-900 p-2 rounded-lg shadow-2xs border border-neutral-800">
-                  <Devicon
-                    className="drop-shadow-2xl text-3xl w-12 h-12"
-                    key={index}
-                    icon={icon}
-                  />
-                </div>
+                <Tooltip text={technology} key={index}>
+                  <div className="bg-neutral-900 p-2 rounded-lg shadow-2xs border border-border">
+                    <Devicon
+                      className="drop-shadow-2xl text-3xl w-12 h-12"
+                      icon={icon}
+                    />
+                  </div>
+                </Tooltip>
               );
             })}
           </div>
@@ -68,13 +73,15 @@ export const Project = ({
               </Link>
             )}
 
-            <Link
-              className="rounded-md p-2 hover:bg-neutral-950 text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
-              href={github}
-              openInNewTab
-            >
-              <Devicon icon="devicon-github-original" className="text-4xl" />
-            </Link>
+            {github && (
+              <Link
+                className="rounded-md p-2 hover:bg-neutral-950 text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
+                href={github}
+                openInNewTab
+              >
+                <Devicon icon="devicon-github-original" className="text-4xl" />
+              </Link>
+            )}
           </div>
         </div>
       </div>
