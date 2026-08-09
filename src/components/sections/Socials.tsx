@@ -16,7 +16,7 @@ export const Socials = (): JSX.Element => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="text-5xl md:text-7xl lg:text-7xl font-header text-neutral-100 bg-linear-to-tr from-neutral-900 to-neutral-800 p-4 rounded-3xl w-full drop-shadow-2xl shadow-2xl"
+        className="text-5xl md:text-7xl lg:text-7xl font-header text-neutral-100 bg-neutral-900 p-4 rounded-3xl w-full drop-shadow-2xl shadow-2xl border border-border"
       >
         Get in touch
       </motion.h2>
@@ -25,15 +25,17 @@ export const Socials = (): JSX.Element => {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
-        className="grid grid-cols-2 gap-4 justify-center p-4 rounded-3xl bg-linear-to-tr from-neutral-900 to-neutral-800 drop-shadow-2xl shadow-2xl w-full h-full lg:flex lg:flex-row lg:h-fit"
+        className="grid grid-cols-2 gap-4 justify-center p-4 rounded-3xl bg-neutral-900 drop-shadow-2xl shadow-2xl w-full h-full lg:flex lg:flex-row lg:h-fit border border-border"
       >
         <Link
           href={data.socials.linkedin}
           openInNewTab
-          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 hover:bg-neutral-900 justify-center"
+          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 justify-center"
         >
           <i
-            className={`fa-brands fa-linkedin text-5xl lg:text-8xl text-linkedin`}
+            className={
+              "fa-brands fa-linkedin text-5xl lg:text-8xl text-linkedin"
+            }
           ></i>
           <p className="lg:text-4xl text-2xl font-header text-linkedin">
             LinkedIn
@@ -43,10 +45,12 @@ export const Socials = (): JSX.Element => {
         <Link
           href={data.socials.github}
           openInNewTab
-          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 hover:bg-neutral-900 justify-center"
+          className="flex flex-col rounded-3xl bg-neutral-800 gap-4 aspect-square w-full p-4 justify-center"
         >
           <i
-            className={`fa-brands fa-github text-5xl lg:text-8xl text-neutral-100`}
+            className={
+              "fa-brands fa-github text-5xl lg:text-8xl text-neutral-100"
+            }
           ></i>
           <p className="lg:text-4xl text-2xl font-header text-neutral-100">
             GitHub
@@ -56,7 +60,7 @@ export const Socials = (): JSX.Element => {
         <Link
           href={"mailto:epledev@outlook.com"}
           openInNewTab
-          className="flex flex-col rounded-3xl bg-neutral-800 aspect-square w-full gap-4 p-4 hover:bg-neutral-900 justify-center items-center"
+          className="flex flex-col rounded-3xl bg-neutral-800 aspect-square w-full gap-4 p-4 justify-center items-center"
         >
           <Mail className="lg:size-24 size-12 text-neutral-100 " />
           <p className="lg:text-4xl text-2xl font-header text-neutral-100">

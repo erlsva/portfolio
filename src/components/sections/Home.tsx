@@ -1,7 +1,7 @@
-import { ChevronDown } from "lucide-react";
 import type { JSX } from "react";
-import { Section } from "@/components/Section";
 import { motion } from "motion/react";
+import { ChevronDown } from "lucide-react";
+import { Section } from "@/components/Section";
 
 export const Home = (): JSX.Element => {
   return (
@@ -15,9 +15,6 @@ export const Home = (): JSX.Element => {
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1 }}
-            text-5xl
-            md:text-7xl
-            lg:text-7xl
             viewport={{ once: true }}
             className="text-neutral-100 w-auto font-header text-4xl md:text-7xl lg:text-7xl"
           >
