@@ -81,6 +81,7 @@ section {
 }
 
 @theme {
+  --color-border: #363a3f;
   --color-discord: #5865f2;
   --color-linkedin: #0a66c2;
   --color-github: #24292e;
