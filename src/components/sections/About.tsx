@@ -18,7 +18,7 @@ export const About = (): JSX.Element => {
           viewport={{ once: true }}
           className="flex flex-row justify-center drop-shadow-2xl w-full order-2 lg:order-1 lg:col-span-3 md:col-span-3 col-span-2"
         >
-          <div className="flex flex-col bg-linear-to-tr from-neutral-900 to-neutral-800 p-4 w-full rounded-3xl items-center justify-center">
+          <div className="flex flex-col bg-neutral-800 p-4 w-full rounded-3xl items-center justify-center border border-border">
             <div className="flex flex-col md:flex-row gap-4 items-center w-full justify-center">
               <Hand className="transform -scale-x-100 animate-wave text-neutral-100 -rotate-12 size-14" />
 
@@ -47,7 +47,7 @@ export const About = (): JSX.Element => {
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="flex flex-col bg-linear-to-tr lg:order-3 lg:col-span-2 order-3 from-neutral-900 to-neutral-800 p-4 rounded-3xl gap-2 lg:gap-4 drop-shadow-2xl shadow-2xl col-span-full"
+          className="flex flex-col bg-linear-to-tr lg:order-3 lg:col-span-2 order-3 bg-neutral-800 p-4 rounded-3xl gap-2 lg:gap-4 drop-shadow-2xl shadow-2xl col-span-full border border-border"
         >
           <h2 className="font-header text-neutral-100 text-3xl lg:text-4xl">
             About
@@ -69,7 +69,7 @@ export const About = (): JSX.Element => {
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="bg-linear-to-tr order-4 from-neutral-900 to-neutral-800 col-span-full p-4 rounded-3xl flex flex-col gap-2 lg:gap-4 drop-shadow-2xl shadow-2xl"
+          className="bg-neutral-800 order-4 col-span-full p-4 rounded-3xl flex flex-col gap-2 lg:gap-4 drop-shadow-2xl shadow-2xl border border-border"
         >
           <h2 className="font-header text-neutral-100 text-3xl lg:text-4xl">
             Background
