@@ -81,11 +81,13 @@ section {
 }
 
 @theme {
+  --color-content: #18191b;
+  --color-github: #24292e;
+  --color-background: #111113;
   --color-border: #363a3f;
+  --color-border-hover: #5a6169;
   --color-discord: #5865f2;
   --color-linkedin: #0a66c2;
-  --color-github: #24292e;
-  --color-bg: #16171d;
   --font-header: "Koulen", serif;
   --font-paragraph: "Comme", serif;
   --animate-wave: wave 4s ease 0s infinite normal none running;

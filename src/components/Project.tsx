@@ -29,7 +29,7 @@ export const Project = ({
       whileInView={{ y: 0, opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="rounded-lg bg-neutral-900 drop-shadow-2xl shadow-2xl overflow-hidden border border-border hover:outline-neutral-600 hover:outline-2"
+      className="rounded-lg bg-content drop-shadow-2xl shadow-2xl overflow-hidden border border-border hover:border-border-hover"
     >
       <img
         src={img}
@@ -62,25 +62,32 @@ export const Project = ({
             })}
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex gap-2">
             {website && (
-              <Link
-                className="rounded-md p-2 hover:bg-neutral-950 text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
-                href={website}
-                openInNewTab
-              >
-                <Globe className="w-9 h-9" />
-              </Link>
+              <Tooltip text="Website" key={"website"}>
+                <Link
+                  className="rounded-md p-2 hover:bg-neutral-950 text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
+                  href={website}
+                  openInNewTab
+                >
+                  <Globe className="w-9 h-9" />
+                </Link>
+              </Tooltip>
             )}
 
             {github && (
-              <Link
-                className="rounded-md p-2 hover:bg-neutral-950 text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
-                href={github}
-                openInNewTab
-              >
-                <Devicon icon="devicon-github-original" className="text-4xl" />
-              </Link>
+              <Tooltip text="GitHub" key={"github"}>
+                <Link
+                  className="rounded-md p-2 hover:bg-neutral-950 text-neutral-400 transition-colors duration-200 hover:text-neutral-100"
+                  href={github}
+                  openInNewTab
+                >
+                  <Devicon
+                    icon="devicon-github-original"
+                    className="text-4xl"
+                  />
+                </Link>
+              </Tooltip>
             )}
           </div>
         </div>

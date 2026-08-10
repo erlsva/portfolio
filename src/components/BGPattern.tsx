@@ -80,7 +80,7 @@ const BGPattern = ({
   return (
     <div
       className={cn(
-        "absolute inset-0 -z-10 size-full bg-neutral-900",
+        "absolute inset-0 -z-10 size-full bg-background",
         maskClasses[mask],
         className,
       )}
