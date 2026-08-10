@@ -6,6 +6,5 @@
 
 # Icons provided by:
 
-## [Lucide](https://lucide.dev/)
-
-## [Devicon](https://devicon.dev/)
+- [Lucide](https://lucide.dev/)
+- [Devicon](https://devicon.dev/)
